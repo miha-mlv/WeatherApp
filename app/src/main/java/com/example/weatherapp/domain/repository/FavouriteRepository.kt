@@ -2,7 +2,6 @@ package com.example.weatherapp.domain.repository
 
 import com.example.weatherapp.domain.entity.City
 import kotlinx.coroutines.flow.Flow
-//import com.example.weatherapp.BuildConfig
 
 interface FavouriteRepository {
 
@@ -12,5 +11,5 @@ interface FavouriteRepository {
 
     suspend fun removeFromFavourite(cityId: Int)
 
-    val favouriteCities: Flow<City>
+    val favouriteCities: Flow<List<City>>
 }

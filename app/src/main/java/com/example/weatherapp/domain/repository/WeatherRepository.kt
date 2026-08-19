@@ -7,8 +7,6 @@ import kotlinx.coroutines.flow.Flow
 
 interface WeatherRepository {
 
-    val favouriteCities: Flow<City>
-
     suspend fun getWeather(cityId: Int): Weather
 
     suspend fun getForecast(cityId: Int): Forecast
